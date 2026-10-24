@@ -1,0 +1,22 @@
+version: '3'
+services:
+  applelaptop:
+    image: fk23/applelaptop:v1
+    ports:
+      - "8000:80"
+    deploy:
+      replicas: 3
+
+  acerlaptop:
+    image: fk23/acerlaptop:v1
+    ports:
+      - "8001:80"
+    deploy:
+      replicas: 3
+
+  lenovolaptop:
+    image: fk23/lenovolaptop:v1
+    ports: 
+      - "8002:80"
+    deploy:
+      replicas: 3    
